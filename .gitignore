@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+
+# Environment and local secrets
+.env
+
+# Runtime data and biometric images
+logs/*
+!logs/.gitkeep
+authorized_faces/*
+!authorized_faces/.gitkeep
+
+# Generated reports and snapshots
+reports/
+*.log
+*.jpg
+*.jpeg
+*.png
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

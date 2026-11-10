@@ -1,0 +1,22 @@
+# AI Security Surveillance System
+
+## Setup (Anaconda Prompt)
+
+0.Change directory
+C:\Users\sruja\OneDrive\Desktop\AI_Security_Project
+
+1. Create environment:
+conda create -n ai_security python=3.9
+
+2. Activate:
+conda activate ai_security
+
+3. Install dependencies:
+ pip install dlib 
+ pip install opencv-python face-recognition numpy flask pygame reportlab 
+ 
+
+4. Run:
+python app.py
+
+
