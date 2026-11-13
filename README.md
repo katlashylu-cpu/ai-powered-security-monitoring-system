@@ -17,6 +17,36 @@ It uses OpenCV for image processing, face recognition for identifying known face
 - **Snapshot Storage:** Supports storing detection snapshots.
 - **Log Summary Generation:** Generates summaries from recorded logs.
 
+## 📸 Project Screenshots
+
+### 1. Home Page
+![Home Page](assets/screenshots/01-home-page.png)
+
+### 2. Authorized Face Detection
+![Authorized Face Detection](assets/screenshots/02-authorized-face-detection.png)
+
+### 3. Unauthorized Face Detection
+![Unauthorized Face Detection](assets/screenshots/03-unauthorized-face-detection.png)
+
+### 4. Admin Login
+![Admin Login](assets/screenshots/04-admin-login.png)
+
+### 5. Admin Dashboard
+![Admin Dashboard](assets/screenshots/05-admin-dashboard.png)
+
+### 6. Security Logs
+![Security Logs](assets/screenshots/06-security-logs.png)
+
+### 7. Analytics Dashboard
+![Analytics Dashboard](assets/screenshots/07-analytics-dashboard.png)
+
+### 8. Image Logs
+![Image Logs](assets/screenshots/08-image-logs.png)
+
+### 9. Face Management
+![Face Management](assets/screenshots/09-face-management.png)
+
+
 ## 🛠️ Technology Stack
 
 | Technology | Purpose |
