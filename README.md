@@ -17,7 +17,11 @@ It uses OpenCV for image processing, face recognition for identifying known face
 - **Snapshot Storage:** Supports storing detection snapshots.
 - **Log Summary Generation:** Generates summaries from recorded logs.
 
+
 ## 📸 Project Screenshots
+
+<details>
+<summary>View All Project Screenshots (9)</summary>
 
 ### 1. Home Page
 ![Home Page](assets/screenshots/01-home-page.png)
@@ -45,6 +49,8 @@ It uses OpenCV for image processing, face recognition for identifying known face
 
 ### 9. Face Management
 ![Face Management](assets/screenshots/09-face-management.png)
+
+</details>
 
 
 ## 🛠️ Technology Stack
