@@ -1,28 +1,49 @@
-# AI-Powered Security Monitoring System
+# 🔐 AI-Powered Security Monitoring System
 
-A Python-based security monitoring project using Flask, OpenCV, and face recognition. The application is intended for local demonstration and experimentation.
+A Python-based security monitoring application built using **Flask, OpenCV, and Face Recognition**. The project demonstrates face recognition, unauthorized-person detection, audio alerts, event logging, and snapshot storage for local experimentation.
 
-## Features
+## 📌 Project Overview
 
-- Face recognition using the `face_recognition` and OpenCV libraries
-- Flask-based web interface
-- Audio alert support
-- Detection event logging and snapshot storage
-- Log summary generation
+The AI-Powered Security Monitoring System is designed to demonstrate how computer vision and face recognition can support basic security monitoring.
 
-## Technology Stack
+It uses OpenCV for image processing, face recognition for identifying known faces, and Flask to provide a local web interface.
 
-- Python
-- Flask
-- OpenCV
-- face-recognition
-- NumPy
-- Pygame
+## ✨ Features
 
-## Project Structure
+- **Face Recognition:** Identifies faces using the `face_recognition` and OpenCV libraries.
+- **Flask Web Interface:** Provides a browser-based interface for local demonstration.
+- **Audio Alerts:** Supports sound alerts for detection events.
+- **Event Logging:** Records detection events for later review.
+- **Snapshot Storage:** Supports storing detection snapshots.
+- **Log Summary Generation:** Generates summaries from recorded logs.
+
+## 🛠️ Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| Python | Main programming language |
+| Flask | Web application framework |
+| OpenCV | Image and video processing |
+| face-recognition | Face identification |
+| NumPy | Numerical operations |
+| Pygame | Audio alert support |
+
+## ⚙️ How It Works
+
+1. The application starts and initializes its local monitoring interface.
+2. OpenCV processes camera frames.
+3. Face recognition compares detected faces with authorized face data.
+4. Detection events are recorded in the application logs.
+5. Audio alerts and snapshot storage support monitoring activities.
+6. The summary generator helps review recorded events.
+
+*Note: This workflow describes the intended application flow; individual steps depend on the implemented functionality and configuration.*
+
+## 📂 Project Structure
 
 ```text
 AI_Security_Project/
+│
 ├── app.py
 ├── face_detection.py
 ├── summary_generator.py
@@ -31,39 +52,105 @@ AI_Security_Project/
 ├── .env.example
 ├── .gitignore
 ├── README.md
+│
 ├── authorized_faces/
 │   └── .gitkeep
+│
 └── logs/
     └── .gitkeep
 ```
 
-## Setup
+## 🚀 Installation and Setup
 
-Use a Python environment compatible with the installed `face-recognition` / `dlib` dependencies. These packages can require additional native build tools, especially on Windows.
+### 1. Clone the repository
 
-1. Create and activate a virtual environment.
-2. Install dependencies:
+```bash
+git clone https://github.com/katlashylu-cpu/ai-powered-security-monitoring-system.git
+```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 2. Open the project directory
 
-3. Add authorized face images to the `authorized_faces/` folder as required by the application.
-4. Run the application:
+```bash
+cd ai-powered-security-monitoring-system
+```
 
-   ```bash
-   python app.py
-   ```
+### 3. Create a virtual environment
 
-5. Open the local Flask address printed by the application in your browser.
+```bash
+python -m venv venv
+```
 
-## Important security and privacy notes
+### 4. Activate the virtual environment
 
-- This repository is a demonstration project, not a production-ready security system.
-- The original application source has been kept unchanged as requested. It contains hardcoded login credentials and a placeholder Flask secret key. **Do not deploy this version publicly or use it to protect real systems.** Replace those values in the source and implement proper authentication and secret management before any real deployment.
-- Face images, generated snapshots, and runtime logs are not included in this repository. Keep any biometric data private and obtain appropriate consent before collecting or processing it.
-- Face recognition can produce false matches and missed detections. Do not rely on it as the sole basis for security decisions.
+**Windows:**
 
-## Notes
+```powershell
+venv\Scripts\activate
+```
 
-The `.env.example` file is a configuration reference only. The unchanged original `app.py` does not currently load these environment variables.
+**macOS / Linux:**
+
+```bash
+source venv/bin/activate
+```
+
+### 5. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+**Important:** The `face-recognition` package depends on `dlib`. Installation may require additional native build tools, particularly on Windows.
+
+### 6. Add authorized face images
+
+Place the required authorized face images inside the:
+
+```text
+authorized_faces/
+```
+
+folder, following the format expected by the application.
+
+### 7. Run the application
+
+```bash
+python app.py
+```
+
+### 8. Open the application
+
+Open the local Flask address printed in the terminal in your web browser.
+
+## 🔒 Security and Privacy Considerations
+
+- This repository is intended for educational purposes, local demonstration, and experimentation. It is not a production-ready security system.
+- The original application source contains hardcoded login credentials and a placeholder Flask secret key. Do not deploy this version publicly or use it to protect real systems.
+- Proper authentication and secure secret management should be implemented before any real-world deployment.
+- Face images, generated snapshots, and runtime logs are not included in the repository.
+- Obtain appropriate consent before collecting or processing biometric information.
+- Face recognition can produce false matches and missed detections. It should not be used as the sole basis for security decisions.
+
+## ⚠️ Configuration Note
+
+The `.env.example` file is provided as a configuration reference. The unchanged original `app.py` does not currently load environment variables from this file.
+
+## 🔮 Future Improvements
+
+- Secure authentication and environment-based configuration.
+- Improved monitoring dashboard.
+- Better detection reporting and visualization.
+- Enhanced error handling and system performance.
+- Additional testing and deployment support.
+
+## 👩‍💻 Author
+
+**Katla Shylaja**
+
+- GitHub: https://github.com/katlashylu-cpu
+- LinkedIn: https://www.linkedin.com/in/katla-shylaja-07a919361/
+- Portfolio: https://katlashylu-cpu.github.io/portfolio-website/
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository.
